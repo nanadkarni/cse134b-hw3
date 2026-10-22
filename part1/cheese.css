@@ -1,0 +1,82 @@
+/** cheese CSS, by Naomika Nadkarni
+repo: /part1
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bodoni 72", Roboto, serif;
+  color: #0f0f4f;
+  line-height: 2;
+  margin: 0 auto;
+  max-width: 55rem;
+  padding: 3rem;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h1.latin, h2.latin{
+  font-style: italic;
+}
+
+#warning{
+  background-color: #f2def0;
+}
+
+blockquote{
+  border-style: dotted;
+  border-color: #166956;
+  padding: 10px;
+  border-radius: 5px;
+  margin:10px;
+}
+
+a:hover{
+  background-color: #fff6c5;
+  color: #22201e
+}
+
+a:focus{
+  background-color:#e2edf9;
+  color:#5e0606;
+}
+
+button:focus{
+  border-color:#22201e;
+  background-color:#ffcec0;
+  color:#bf401d;
+}
+
+button:hover{
+  background-color: #61615f;
+  color:#f3f8fd;
+}
+
+input:focus{
+  background-color:#ccd7ef;
+  color:#166956;
+}
+
+h1:hover{
+  color:#082c55;
+  background-color:#e2edf9;
+}
+
+/*
+this one wins because in the css cascading rules, with all else being equal, priority is deptermined by order of appearance
+*/
+h1:hover{
+  color:#a30894;
+  background-color:#ffcec0;
+}
+
