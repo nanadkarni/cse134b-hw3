@@ -14,13 +14,13 @@
     <body>
         <header>
             <title-card>
-                <h2><a href="index.html">&#10035 Naoms' Portfolio &#10035</a></h2>
-                <p>a little look into my mind</p>
-			    <button commandfor="help-dialog" command="show-modal">
-				<svg width="20" height="20" viewBox="0 0 24 24">
-                        <circle r="10" cx="12" cy="12" fill="lightblue" />
-				</svg>
-			</button>
+                <hgroup>
+                    <h2><a href="index.html">&#10035 Naoms' Portfolio &#10035</a></h2>
+                    <p>a little look into my mind</p>
+                </hgroup>
+			    <button commandfor="cutePopup" command="show-modal">
+                    <label for="cutePopup">mysterious<br>button</label>
+			    </button>
             </title-card>
             <hr>
             <nav>
@@ -53,9 +53,10 @@
                 <input type="color" id="headcolor" name="headcolor" value="#ff0000">
             </form>
         </footer>
-    <dialog id="help-dialog">
+        
+    <dialog id="cutePopup">
 		<header>
-			<button commandfor="help-dialog" command="close" aria-label="Close">&times;</button>
+			<button commandfor="cutePopup" command="close" aria-label="Close">&times;</button>
 		</header>
 		<section>
             <h2>Hey</h2>
@@ -89,7 +90,7 @@
             </ul>
 		</section>
 		<footer>
-			<button commandfor="help-dialog" command="close" class="primary">Done</button>
+			<button commandfor="cutePopup" command="close" class="primary">Done</button>
 		</footer>
 	</dialog>
     </body>
